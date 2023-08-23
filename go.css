@@ -29,6 +29,20 @@ iframe
     height:146px; 
 }
 
+.linkGo
+{
+    text-decoration: underline;
+    color: blue;
+    font-weight: 600;
+}
+
+code
+{
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #D9D9D9;
+    padding: 0 2px;
+}
+
 @media (min-width:640px)
 {
     iframe
@@ -45,6 +59,12 @@ html[dark] .intro
     color: #fff;
 }
 
+html[dark] code
+{
+    background-color: #eeeeee;
+    color: #252525;
+}
+
 html[dark] .intro::after
 {
     color: #fff;
@@ -53,6 +73,12 @@ html[dark] .intro::after
 html[dark] .introText
 {
     color: #fff;
+}
+
+html[dark] .linkGo
+{
+    /* color: #ac00eb; */
+    color: #0075eb;
 }
 
 html[dark] summary
