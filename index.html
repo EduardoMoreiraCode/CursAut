@@ -8,9 +8,10 @@
     <link href="cursaut-purple-logo.png" rel="apple-touch-icon" />
     <meta name="mobile-web-app-capable" content="yes"/>
     <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link rel="stylesheet" href="load.css">
     <title>CursAut</title>
 </head>
-<body>
+<body onload="loading()">
     <header>
         <span class="invisible">
             <a href="https://cursaut.vercel.app/"><img src="cursaut-header-icon.png" alt="CursAut"></a>
@@ -23,6 +24,22 @@
             <input type="checkbox" value="moon-icon.png" id="input-dark-mode">
         </div>
     </header>
+    <div class="body">
+        <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+            <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+                <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+            </linearGradient>
+            <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+            </linearGradient>
+        </defs>
+        <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36" stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round" transform="rotate(-90,100,100)" />
+        <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36" stroke-dasharray="1 165" stroke-linecap="round" />
+    </svg>
+    </div>
     <nav>
         <h1 class="f1">Do zero à <span class="high">Automação</span></h1>
         <h2 class="f2">Somente com a <span class="high">CursAut</span></h2>
