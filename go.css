@@ -36,6 +36,11 @@ iframe
     font-weight: 600;
 }
 
+html
+{
+    scroll-behavior: smooth;
+}
+
 code
 {
     font-family: 'Courier New', Courier, monospace;
