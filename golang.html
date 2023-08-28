@@ -6,12 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="go.css">
+    <link rel="stylesheet" href="load.css">
     <link href="cursaut-purple-logo.png" rel="shortcut icon" type="image/x-icon" />
     <link href="cursaut-purple-logo.png" rel="apple-touch-icon" />
     <title>Golang - CursAut</title>
 </head>
 
-<body>
+<body onload="loading()">
     <header>
         <span class="invisible">
             <a href="https://cursaut.vercel.app/"><img src="cursaut-header-icon.png" alt="CursAut"></a>
@@ -24,6 +25,26 @@
             <input type="checkbox" value="moon-icon.png" id="input-dark-mode">
         </div>
     </header>
+    <div class="body">
+        <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36"
+                stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round"
+                transform="rotate(-90,100,100)" />
+            <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36"
+                stroke-dasharray="1 165" stroke-linecap="round" />
+        </svg>
+    </div>
+
     <nav>
         <h1 class="intro">Introdução</h1>
         <p class="introText">Go, ou Golang, é uma linguagem de programação de código aberto do Google, destacada por sua
@@ -49,9 +70,11 @@
         <p class="introText"><strong>Passo 5:</strong> Abrir a pasta do projeto.</p>
         <p class="introText"><strong>Passo 6:</strong> Instalar as extensões.</p>
         <p class="introText"><strong>Passo 7:</strong> Verificar a instalação.</p>
-        <p class="introText">Para ter certeza de que a instalação foi bem-sucedida, abra o terminal do VS Code e digite o comando <code>go run main.go</code> e confira se o programa roda como esperado.</p>
+        <p class="introText">Para ter certeza de que a instalação foi bem-sucedida, abra o terminal do VS Code e digite
+            o comando <code>go run main.go</code> e confira se o programa roda como esperado.</p>
         <br>
-        <p class="introText">Tenha acesso a informações mais detalhadas e precisas assistindo aos vídeos do Módulo 2 abaixo do conteúdo:</p>
+        <p class="introText">Tenha acesso a informações mais detalhadas e precisas assistindo aos vídeos do Módulo 2
+            abaixo do conteúdo:</p>
         <div class="cursos">
             <h2 class="cursoText">MÓDULOS</h2>
             <br>
@@ -67,7 +90,8 @@
                     <summary> Módulo 2</summary>
                     <div class="iframe-container">
                         <iframe src="https://www.youtube.com/embed/yaPLSjFtDcA"
-                            title="Módulo 2: Instalação e Configuração da linguagem GO" frameborder="0" allowfullscreen></iframe>
+                            title="Módulo 2: Instalação e Configuração da linguagem GO" frameborder="0"
+                            allowfullscreen></iframe>
                     </div>
                 </details>
             </div>
