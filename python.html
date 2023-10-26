@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="style.css">
+    <link href="cursaut-purple-logo.png" rel="shortcut icon" type="image/x-icon" />
+    <link href="cursaut-purple-logo.png" rel="apple-touch-icon" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <link rel="stylesheet" href="load.css">
+    <link rel="stylesheet" href="go.css">
+    <title>Python - CursAut</title>
+</head>
+
+<body onload="loading()">
+    <header>
+        <span class="invisible">
+            <a href="https://cursaut.vercel.app/"><img src="cursaut-header-icon.png" alt="CursAut"></a>
+        </span>
+        <h1 class="text-header">CursAut</h1>
+        <div class="botao">
+            <label class="label" for="input-dark-mode">
+                <img alt="night mode" class="img" src="moon-icon.png">
+            </label>
+            <input type="checkbox" value="moon-icon.png" id="input-dark-mode">
+        </div>
+    </header>
+    <div class="body">
+        <svg class="pl" viewBox="0 0 200 200" width="200" height="200" xmlns="http://www.w3.org/2000/svg">
+            <defs>
+                <linearGradient id="pl-grad1" x1="1" y1="0.5" x2="0" y2="0.5">
+                    <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+                <linearGradient id="pl-grad2" x1="0" y1="0" x2="0" y2="1">
+                    <stop offset="0%" stop-color="hsl(313,90%,55%)" />
+                    <stop offset="100%" stop-color="hsl(223,90%,55%)" />
+                </linearGradient>
+            </defs>
+            <circle class="pl__ring" cx="100" cy="100" r="82" fill="none" stroke="url(#pl-grad1)" stroke-width="36"
+                stroke-dasharray="0 257 1 257" stroke-dashoffset="0.01" stroke-linecap="round"
+                transform="rotate(-90,100,100)" />
+            <line class="pl__ball" stroke="url(#pl-grad2)" x1="100" y1="18" x2="100.01" y2="182" stroke-width="36"
+                stroke-dasharray="1 165" stroke-linecap="round" />
+        </svg>
+    </div>
+    <nav>
+        <h1 class="intro">Introdução</h1>
+        <p class="introText">Python é uma linguagem de programação de alto nível, interpretada de script, imperativa,
+            orientada a objetos, funcional, de tipagem dinâmica e forte. Foi lançada por Guido van Rossum em 1991.
+            Atualmente, possui um modelo de desenvolvimento comunitário, aberto e gerenciado pela organização sem fins
+            lucrativos Python Software Foundation. Apesar de várias partes da linguagem possuírem padrões e
+            especificações formais, a linguagem, como um todo, não é formalmente especificada. O padrão na pratica é a
+            implementação CPython.</p>
+        <p class="introText">Python ganhou rapidamente popularidade desde os anos 2000 devido à sua
+            simplicidade, legibilidade e uma vasta biblioteca de módulos. A linguagem
+            encontrou uso em várias áreas, como desenvolvimento web, ciência de dados,
+            aprendizado de máquina e automação.</p>
+        <br>
+        <p class="introText">Tenha acesso a informações mais detalhadas e precisas assistindo ao vídeo do <a
+                class="linkGo" href="#modulos">Módulo 1</a>
+            abaixo do conteúdo:</p>
+        <br>
+        <h1 class="intro">Instalação e Configuração</h1>
+        <p class="introText">Bom, a primeira coisa para instalar a linguagem de programação Python é acessar o <a
+                class="linkGo" href="https://www.python.org/">site
+                oficial de Python</a>. Lá, você encontrará todas as
+            informações necessárias para iniciar o processo de instalação.</p>
+        <br>
+        <p class="introText">Instalar e configurar programas em computadores pode parecer uma tarefa
+            complicada, mas na realidade, é mais simples do que você imagina. Primeiro, você deve possuir o VSCode em
+            seu dispositivo. Para instalar acesse <a class="linkGo" href="https://code.visualstudio.com/">Visual Studio
+                Code</a>.</p>
+
+                <br>
+        <p class="introText"><strong>Passo 1:</strong> Abra o Visual Studio Code: Após a instalação do VS Code, abra o aplicativo.</p>
+        <p class="introText"><strong>Passo 2:</strong> Clique na seção "Extensões" na barra lateral esquerda (ícone de quatro
+            quadrados empilhados ou pressione <code>Ctrl+Shift+X</code>).</p>
+        <p class="introText"><strong>Passo 3:</strong> Na barra de pesquisa, digite "Python" e pressione Enter.
+        </p>
+        <p class="introText"><strong>Passo 4:</strong>  Clique no resultado "Python" e, em seguida, clique no botão "Instalar" na página da
+            extensão.</p>
+        <p class="introText"><strong>Passo 5:</strong> Escreva e execute código: Agora, você pode escrever seu código Python no VS Code e executálo pressionando <code>Ctrl+Enter</code> ou clicando com o botão direito do mouse e selecionando "Executar
+            Python File in Terminal".</p>
+            <br>
+            <p class="introText">Imprimindo o primeiro Hello World:</p>
+            <p class="introText">Para imprimir "Hello, World!" em Python, você pode usar a função <code>print()</code>. Aqui está um
+                exemplo simples:
+                <code>print("Hello, World!")</code>
+                Basta copiar e colar esse código em um arquivo Python (.py) e executá-lo para ver a saída
+                "Hello, World!" no console.
+                </p>
+                <br>
+                <p class="introText">Dúvidas? Assista ao <a class="linkGo" href="#modulos">Módulo 2</a>
+                    abaixo do conteúdo:</p>
+
+                    <br>
+                    <div class="cursos">
+                        <h2 class="cursoText" id="modulos">MÓDULOS</h2>
+                        <br>
+                        <div class="etapa1">
+                            <details>
+                                <summary> Módulo 1</summary>
+                                <div class="iframe-container">
+                                    <iframe src="https://www.youtube.com/embed/JRqKZtPDbno?si=ZaEp3_Gsc4-OI3am"
+                                        title="Módulo 1: Introdução a Python" frameborder="0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </details>
+                            <details>
+                                <summary> Módulo 2</summary>
+                                <div class="iframe-container">
+                                    <iframe src="https://www.youtube.com/embed/-r6kyOidRU8?si=Lu7rU5YwPsuGlUox"
+                                        title="Módulo 2: Instalação e Configuração de Python" frameborder="0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </details>
+                            <!-- <details>
+                                <summary> Módulo 3</summary>
+                                <div class="iframe-container">
+                                    <iframe src="https://www.youtube.com/embed/qnMuiOh6fQo?si=kNTbye_UYoOWJXBF"
+                                        title="Módulo 3: Aventuras na Sintaxe e Funções com GO" frameborder="0"
+                                        allowfullscreen></iframe>
+                                </div>
+                            </details> -->
+                        </div>
+                    </div>
+    </nav>
+    <script src="app.js" type="text/javascript"></script>
+</body>
+
+</html>
