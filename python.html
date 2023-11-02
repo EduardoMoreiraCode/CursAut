@@ -74,59 +74,105 @@
             seu dispositivo. Para instalar acesse <a class="linkGo" href="https://code.visualstudio.com/">Visual Studio
                 Code</a>.</p>
 
-                <br>
-        <p class="introText"><strong>Passo 1:</strong> Abra o Visual Studio Code: Após a instalação do VS Code, abra o aplicativo.</p>
-        <p class="introText"><strong>Passo 2:</strong> Clique na seção "Extensões" na barra lateral esquerda (ícone de quatro
+        <br>
+        <p class="introText"><strong>Passo 1:</strong> Abra o Visual Studio Code: Após a instalação do VS Code, abra o
+            aplicativo.</p>
+        <p class="introText"><strong>Passo 2:</strong> Clique na seção "Extensões" na barra lateral esquerda (ícone de
+            quatro
             quadrados empilhados ou pressione <code>Ctrl+Shift+X</code>).</p>
         <p class="introText"><strong>Passo 3:</strong> Na barra de pesquisa, digite "Python" e pressione Enter.
         </p>
-        <p class="introText"><strong>Passo 4:</strong>  Clique no resultado "Python" e, em seguida, clique no botão "Instalar" na página da
+        <p class="introText"><strong>Passo 4:</strong> Clique no resultado "Python" e, em seguida, clique no botão
+            "Instalar" na página da
             extensão.</p>
-        <p class="introText"><strong>Passo 5:</strong> Escreva e execute código: Agora, você pode escrever seu código Python no VS Code e executálo pressionando <code>Ctrl+Enter</code> ou clicando com o botão direito do mouse e selecionando "Executar
+        <p class="introText"><strong>Passo 5:</strong> Escreva e execute código: Agora, você pode escrever seu código
+            Python no VS Code e executálo pressionando <code>Ctrl+Enter</code> ou clicando com o botão direito do mouse
+            e selecionando "Executar
             Python File in Terminal".</p>
-            <br>
-            <p class="introText">Imprimindo o primeiro Hello World:</p>
-            <p class="introText">Para imprimir "Hello, World!" em Python, você pode usar a função <code>print()</code>. Aqui está um
-                exemplo simples:
-                <code>print("Hello, World!")</code>
-                Basta copiar e colar esse código em um arquivo Python (.py) e executá-lo para ver a saída
-                "Hello, World!" no console.
+        <br>
+        <p class="introText">Imprimindo o primeiro Hello World:</p>
+        <p class="introText">Para imprimir "Hello, World!" em Python, você pode usar a função <code>print()</code>. Aqui
+            está um
+            exemplo simples:
+            <code>print("Hello, World!")</code>
+            Basta copiar e colar esse código em um arquivo Python (.py) e executá-lo para ver a saída
+            "Hello, World!" no console.
+        </p>
+        <br>
+        <p class="introText">Dúvidas? Assista ao <a class="linkGo" href="#modulos">Módulo 2</a>
+            abaixo do conteúdo:</p>
+        <br>
+        <h1 class="intro">Sintaxe e Funções de Python</h1>
+        <p class="introText">Além de tantas vantagens, que tornam Python a linguagem mais utilizada atualmente, também
+            possui um diferencial na sintaxe e nas funções, o que torna o ato de &quot;codar&quot; muito mais prático,
+            fácil e rápido.</p>
+        <p class="introText">Veja abaixo alguns exemplos de sintaxe com Python:</p>
+        <br>
+        <p class="introText"><strong>Comentários:</strong> Comentários em Python começam com o símbolo &#x23;. Eles são
+            ignorados pelo
+            interpretador e servem para documentar o código.</p>
+        <code>#isso eh um comentario</code>
+        <p class="introText"><strong>Estruturas Condicionais:</strong> Python usa if, elif (abreviação de "else if") e
+            else para criar estruturas
+            condicionais.</p>
+        <code>
+            if idade &lt; 18: <br>
+                print(&quot;Menor de idade&quot;) <br>
+            elif idade &gt;&equals; 18 and idade &lt; 65: <br>
+                print(&quot;Adulto&quot;) <br>
+            else: <br>
+                print(&quot;Idoso&quot;) <br>
+        </code>
+        <br>
+        <p class="introText">Para definir uma função em Python, você usa a palavra-chave def, seguida pelo nome da
+            função, parênteses (), e um :. O corpo da função é indentado com espaços ou tabulação.</p>
+            <code>def saudacao(nome): <br>
+                print(&quot;Olá, &quot; + nome + &quot;!&quot;) <br>
+            </code>
+            <p class="introText">Funções podem receber argumentos (valores passados quando a função é chamada) e esses
+                argumentos podem ser usados como parâmetros (variáveis) dentro da função.
                 </p>
-                <br>
-                <p class="introText">Dúvidas? Assista ao <a class="linkGo" href="#modulos">Módulo 2</a>
-                    abaixo do conteúdo:</p>
+                <code>def soma(a, b): <br>
+                    resultado = a + b <br>
+                    return resultado <br>
+                   </code>
 
-                    <br>
-                    <div class="cursos">
-                        <h2 class="cursoText" id="modulos">MÓDULOS</h2>
-                        <br>
-                        <div class="etapa1">
-                            <details>
-                                <summary> Módulo 1</summary>
-                                <div class="iframe-container">
-                                    <iframe src="https://www.youtube.com/embed/JRqKZtPDbno?si=ZaEp3_Gsc4-OI3am"
-                                        title="Módulo 1: Introdução a Python" frameborder="0"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </details>
-                            <details>
-                                <summary> Módulo 2</summary>
-                                <div class="iframe-container">
-                                    <iframe src="https://www.youtube.com/embed/-r6kyOidRU8?si=Lu7rU5YwPsuGlUox"
-                                        title="Módulo 2: Instalação e Configuração de Python" frameborder="0"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </details>
-                            <!-- <details>
-                                <summary> Módulo 3</summary>
-                                <div class="iframe-container">
-                                    <iframe src="https://www.youtube.com/embed/qnMuiOh6fQo?si=kNTbye_UYoOWJXBF"
-                                        title="Módulo 3: Aventuras na Sintaxe e Funções com GO" frameborder="0"
-                                        allowfullscreen></iframe>
-                                </div>
-                            </details> -->
-                        </div>
+        <br>
+        <br>
+        <p class="introText">Quer aprender todos os comandos de sintaxe e funções para Python? Então assista ao vídeo do
+            <a class="linkGo" href="#modulos">Módulo 3</a>
+            abaixo do conteúdo:
+        </p>
+        <br>
+        <div class="cursos">
+            <h2 class="cursoText" id="modulos">MÓDULOS</h2>
+            <br>
+            <div class="etapa1">
+                <details>
+                    <summary> Módulo 1</summary>
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/JRqKZtPDbno?si=ZaEp3_Gsc4-OI3am"
+                            title="Módulo 1: Introdução a Python" frameborder="0" allowfullscreen></iframe>
                     </div>
+                </details>
+                <details>
+                    <summary> Módulo 2</summary>
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/-r6kyOidRU8?si=Lu7rU5YwPsuGlUox"
+                            title="Módulo 2: Instalação e Configuração de Python" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </details>
+                <details>
+                    <summary> Módulo 3</summary>
+                    <div class="iframe-container">
+                        <iframe src="https://www.youtube.com/embed/gwSON1KNbwI?si=NWMXQUQEXW5Qk1ab"
+                            title="Módulo 3: Aventuras na Sintaxe e Funções com Python" frameborder="0"
+                            allowfullscreen></iframe>
+                    </div>
+                </details>
+            </div>
+        </div>
     </nav>
     <script src="app.js" type="text/javascript"></script>
 </body>
